@@ -1,0 +1,2474 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    padding: 0px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+body {
+    margin: 0px auto;
+    scroll-behavior: smooth;
+    padding: 0px;
+    background: var(--bg1);
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: transparent;
+}
+
+a,
+button {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+/* Saas Landing Page header navbar start */
+._saas_header_wrapper {
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+._saas_header_wrapper::before {
+    position: absolute;
+    content: "";
+    background: var(--color3);
+    filter: blur(197px);
+    width: 290px;
+    height: 290px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+._saas_header_nav_wrapper {
+    padding: 20px 0;
+}
+
+._saas_header_nav_wrapper_list {
+    margin: 0 auto;
+}
+
+._saas_header_nav_wrapper_item {
+    margin: 0 34px 0 0;
+}
+
+._saas_header_nav_wrapper_item:last-child {
+    margin-right: 0;
+}
+
+._saas_header_nav_wrapper_item_link {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgba(10, 15, 13, 0.8);
+    transition: .2s all ease;
+}
+
+._saas_header_nav_wrapper_item_link:hover {
+    color: var(--color6) !important;
+}
+
+._saas_header_nav_form_btn {
+    display: flex;
+    align-items: center;
+}
+
+._saas_header_nav_login {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color1) !important;
+    transition: .2s all ease;
+    margin-right: 34px;
+}
+
+._saas_header_nav_login:hover {
+    color: var(--color6) !important;
+}
+
+._saas_header_nav_btn {
+    width: 128px;
+    height: 40px;
+    border: 1px solid var(--color1);
+    border-radius: 40px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color1);
+    outline: none !important;
+    transition: .2s all ease;
+    background-color: transparent;
+}
+
+._saas_header_nav_btn:hover {
+    background: var(--color1) !important;
+    color: var(--color2) !important;
+}
+
+/* Saas Landing Page header herosection starts */
+._saas_header_wrap {
+    padding: 100px 0 120px;
+}
+
+._saas_header_left_area {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+._saas_header_left_area_right_bg_img_ic {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 14px;
+    left: 297px;
+    animation: Animation 1.2s linear alternate infinite;
+}
+
+@keyframes Animation {
+    form {
+        transform: scale(1) translateY(0);
+    }
+
+    to {
+        transform: scale(1.06) translateY(-5px);
+    }
+}
+
+._saas_header_left_area_left_bg_img {
+    margin-right: 0;
+    position: relative;
+}
+
+._saas_header_left_area_left_bg_img::before {
+    background: url(../img/bg_blur2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    width: 214px;
+    height: 214px;
+    top: 150px;
+    left: 0;
+    z-index: -1;
+}
+
+._saas_header_left_area_left_img {
+    max-width: 177px;
+}
+
+._saas_header_left_area_right_bg_img {
+    position: relative;
+}
+
+._saas_header_left_area_right_bg_img::before {
+    background: url(../img/bg_blur1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    width: 404px;
+    height: 525px;
+    top: 0;
+    left: 35px;
+    z-index: -1;
+}
+
+
+._saas_header_left_area_right_img {
+    max-width: 342px;
+}
+
+
+._saas_header_details_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 24px;
+    max-width: 100%;
+}
+
+._saas_header_details_txt {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 85%;
+    margin-bottom: 36px;
+}
+
+._saas_header_details_btn {
+    display: inline-block;
+}
+
+._saas_header_details_btn_link {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    background-color: transparent;
+    color: var(--color1) !important;
+    border: 0;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+._saas_header_details_btn_link::before {
+    position: absolute;
+    content: "";
+    width: 129px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color1);
+    transition: .2s all ease-in-out;
+}
+
+._saas_header_details_btn_link:hover::before {
+    width: 0;
+    height: 0;
+}
+
+._saas_header_details_btn_link_span {
+    width: 42px;
+    height: 42px;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 20px;
+    transition: .2s all ease-in-out;
+}
+
+._saas_logo_wrap {
+    margin: 0 0 140px;
+    padding: 44px 0;
+    border-top: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color1);
+}
+
+._saas_logo_title {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+}
+
+._saas_logo_companies_info {
+    margin-top: 40px;
+}
+
+._saas_logo_companies_info_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+._saas_logo_companies_info_list_item_img {
+    max-width: 135px;
+}
+
+/* Saas Landing Page services starts */
+._saas_services_wrapper {
+    margin: 0 0 110px;
+}
+
+._saas_services_top_cont {
+    margin-bottom: 70px;
+}
+
+._saas_services_top_title {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+._saas_services_card_1 {
+    padding: 40px 32px 0;
+    background: #EBFFDB;
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+}
+
+._saas_services_card_1_title {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 16px;
+    max-width: 100%;
+}
+
+._saas_services_card_1_para {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 100%;
+    margin-bottom: 18px;
+}
+
+._saas_services_card_1_bg_img {
+    margin: 0 auto;
+}
+
+._saas_services_card_2 {
+    padding: 0 32px 40px;
+    background: #D5E9F8;
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+}
+
+._saas_services_card_2_title {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 16px;
+    max-width: 100%;
+}
+
+._saas_services_card_2_para {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 100%;
+}
+
+._saas_services_card_bg_2_img {
+    margin-bottom: 35px;
+}
+
+._saas_services_card_3 {
+    padding: 40px 32px 0;
+    background: #C5B6F0;
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+}
+
+._saas_services_card_3_title {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 16px;
+    max-width: 100%;
+}
+
+._saas_services_card_3_para {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 100%;
+    margin-bottom: 69px;
+}
+
+._saas_services_card_3_bg_img {
+    margin: 0 auto;
+}
+
+/* Saas Landing Page features 1 starts */
+._saas_features_1_wrapper {
+    margin-bottom: 140px;
+    overflow: hidden;
+}
+
+._saas_features_1_top_cont {
+    margin-bottom: 70px;
+}
+
+._saas_features_1_top_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 1.2;
+    color: var(--color1);
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+._saas_features_1_top_para {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    margin-bottom: 32px;
+    max-width: 56%;
+}
+
+._saas_features_1_top_btn_link {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--color1) !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: .2s all ease-in-out;
+}
+
+._saas_features_1_top_btn_link::before {
+    position: absolute;
+    content: "";
+    width: 127px;
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background-color: var(--color1);
+    transition: .2s all ease-in-out;
+}
+
+._saas_features_1_top_btn_link:hover::before {
+    width: 0;
+    height: 0;
+}
+
+._saas_features_1_top_btn_link_span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+}
+
+._saas_features_cards {
+    padding: 28px;
+    background: var(--bg2);
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+._saas_features_cards_bg_img_span {
+    background: var(--bg3);
+    border: 1px solid var(--bg5);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+
+._cards_1 {
+    background: var(--bg3);
+}
+
+._cards_2 {
+    background: var(--bg4);
+}
+
+._cards_3 {
+    background: var(--color4);
+}
+
+._saas_features_cards_details {
+    margin-left: 10px;
+}
+
+._saas_features_cards_details_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 10px;
+}
+
+._saas_features_cards_details_para {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 100%;
+}
+
+._saas_features_cards_btn {
+    margin-left: 10px;
+}
+
+._saas_features_cards_btn_link {
+    width: 115px;
+    height: 40px;
+    background: var(--color2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color1) !important;
+    transition: .2s all ease;
+}
+
+._saas_features_cards_btn_link:hover {
+    background: var(--color1);
+    color: var(--color2) !important;
+}
+
+._saas_features_card_slider_wrap {
+    margin: 0 -373px 0 -463px;
+}
+
+/* Saas Landing Page features 2 starts */
+._saas_features_2_top_cont {
+    margin-bottom: 70px;
+}
+
+._saas_features_2_top_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+._saas_features_2_top_para {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: rgba(10, 15, 13, 0.8);
+    margin: 0 auto;
+    margin-bottom: 32px;
+    max-width: 43%;
+}
+
+._saas_features_2_top_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._saas_features_2_top_btn_link {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--color1) !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+._saas_features_2_top_btn_link::before {
+    position: absolute;
+    content: "";
+    width: 129px;
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background-color: var(--color1);
+    transition: .2s all ease-in-out;
+}
+
+._saas_features_2_top_btn_link:hover::before {
+    width: 0;
+    height: 0;
+}
+
+._saas_features_2_top_btn_link_span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+}
+
+._saas_features_2_Quick_View {
+    padding: 40px 28px 38px 40px;
+    background: var(--color4);
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+._saas_features_2_Quick_View_details_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 26px;
+    max-width: 100%;
+}
+
+._saas_features_2_Quick_View_list_item {
+    display: flex;
+}
+
+._saas_features_2_Quick_View_details_para1 {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 90%;
+    margin-bottom: 14px;
+    margin-left: 12px;
+}
+
+._saas_features_2_Quick_View_details_para2 {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 85%;
+    margin-left: 12px;
+}
+
+._saas_features_2_Sales_Data {
+    padding: 40px 40px 0;
+    background: var(--color3);
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+    margin-bottom: 44px;
+}
+
+._saas_features_2_Sales_Data_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 26px;
+}
+
+._saas_features_2_Sales_Data_list_item {
+    display: flex;
+}
+
+._saas_features_2_Sales_Data_list_item_txt {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    margin-bottom: 14px;
+    max-width: 71%;
+    margin-left: 12px;
+}
+
+._saas_features_2_Site_performance {
+    padding: 35px 0 0 40px;
+    background: var(--color5);
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+}
+
+._saas_features_2_Site_performance_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 20px;
+}
+
+._saas_features_2_Site_performance_list_item {
+    display: flex;
+}
+
+._saas_features_2_Site_performance_list_item_txt {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 71%;
+    margin: 0 0 14px 14px;
+
+}
+
+._saas_features_2_Channel {
+    padding: 40px 0 0 40px;
+    background: #D5E9F8;
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+    height: 100%;
+}
+
+._saas_features_2_Channel_details {
+    margin-bottom: 62px;
+}
+
+._saas_features_2_Channel_details_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+    max-width: 100%;
+    margin-bottom: 26px;
+    height: 100%;
+}
+
+._saas_features_2_Interactive_details {
+    margin-bottom: 80px;
+}
+
+._saas_features_2_Channel_details_para {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    margin: 0 0 14px 14px;
+    max-width: 100%;
+}
+
+._saas_features_2_Channel_list_item {
+    display: flex;
+}
+
+._saas_features_2_Interactive {
+    padding: 40px 70px 0 40px;
+    background: var(--bg6);
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+._saas_features_2_Interactive_details_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 26px;
+}
+
+._saas_features_2_Interactive_details_para {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    margin: 0 0 14px 14px;
+    max-width: 100%;
+}
+
+._saas_features_2_Interactive_list_item {
+    display: flex;
+}
+
+._saas_features_2_btm {
+    margin-top: 50px;
+}
+
+/* Saas Landing Page services 2 start */
+._saas_services_2_wrapper {
+    margin: 140px 0;
+}
+
+._saas_services_2_top_cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+._saas_services_2_top_title {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--color1);
+}
+
+._saas_services_2_top_para {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 100%;
+}
+
+._saas_services_2_top_btn_link {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--color1) !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+._saas_services_2_top_btn_link::before {
+    position: absolute;
+    content: "";
+    width: 131px;
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background-color: var(--color1);
+    transition: .2s all ease-in-out;
+}
+
+._saas_services_2_top_btn_link:hover::before {
+    width: 0;
+    height: 0;
+}
+
+._saas_services_2_top_btn_link_span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+}
+
+._saas_services_2_card {
+    padding: 32px 32px 40px;
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+._card_1 {
+    background: var(--color5);
+}
+
+._card_2 {
+    background: var(--bg3);
+}
+
+._card_3 {
+    background: var(--color4);
+}
+
+._saas_services_2_card_details {
+    margin-top: 110px;
+}
+
+._saas_services_2_card_details_no {
+    font-family: 'Satoshi';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+    color: var(--color1);
+}
+
+._saas_services_2_card_details_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 12px;
+    max-width: 100%;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--color1);
+}
+
+._saas_services_2_card_details_txt {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 96%;
+    color: var(--color1);
+}
+
+._saas_services_2_card_details_2_no ._saas_services_2_card_details_3_no {
+    font-family: 'Satoshi';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 35px;
+}
+
+
+._saas_services_2_card_details_2_title,
+._saas_services_2_card_details_3_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    color: var(--color1);
+}
+
+._saas_services_2_card_1_img {
+    max-width: 38px;
+}
+
+._saas_services_2_card_2_img {
+    max-width: 222px;
+}
+
+._saas_services_2_card_bg_img {
+    margin-bottom: 50px;
+}
+
+._saas_services_2_card_details_2_txt {
+    display: none;
+}
+
+._saas_services_2_card_details_3_txt {
+    display: none;
+}
+
+._saas_services_2_card_3_img {
+    max-width: 129px;
+}
+
+._saas_services_2_card_details_2_no,
+._saas_services_2_card_details_3_no {
+    font-family: 'Satoshi';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+    color: var(--color1);
+}
+
+/* Saas Landing Page testimonial */
+._saas_testimonials_wrapper {
+    padding: 80px 0;
+    background: var(--color3);
+}
+
+._saas_testimonials_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1);
+}
+
+._saas_testimonials_top_cont {
+    margin-bottom: 70px;
+}
+
+._saas_testimonials_cards {
+    padding: 30px;
+    background: var(--color2);
+    border: 1px solid var(--color1);
+    border-radius: 14px;
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+._saas_testimonials_cards_star_ic svg {
+    margin-bottom: 20px;
+}
+
+._saas_testimonials_cards_quote {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 87%;
+}
+
+._saas_testimonials_cards_quote_4 {
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgba(10, 15, 13, 0.8);
+    max-width: 87%;
+}
+
+._saas_quote_1,
+._saas_quote_6 {
+    margin-bottom: 51px;
+}
+
+._saas_quote_2 {
+    margin-bottom: 21px;
+}
+
+._saas_quote_4 {
+    margin-bottom: 21px;
+}
+
+._saas_testimonials_cards_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--color1);
+    margin-bottom: 12px;
+}
+
+._saas_testimonials_cards_smtitle {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgba(10, 15, 13, 0.8);
+    padding-bottom: 16px;
+}
+
+._saas_testimonials_cards_user_details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(10, 15, 13, 0.2);
+    padding-top: 19px;
+    margin-top: 19px;
+}
+
+._saas_testimonials_cards_bg_img {
+    padding-bottom: 18px;
+    position: relative;
+}
+
+._saas_testimonials_cards_img_play_btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 38px;
+    right: 11px;
+    background: var(--color2) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+
+._saas_testimonials_cards_img_play_btn:hover {
+    background: var(--color3) !important;
+}
+
+/* Saas Landing Page FAQ section */
+._saas_FAQ_wrapper {
+    padding: 80px 0;
+    background: var(--color1);
+}
+
+._saas_FAQ_cont {
+    margin-bottom: 70px;
+}
+
+._saas_FAQ_cont_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 1.2;
+    color: var(--color2);
+}
+
+._saas_FAQ_item {
+    margin-bottom: 30px;
+    border: 1px solid var(--color2) !important;
+}
+
+._saas_FAQ_btn {
+    background: var(--bg7);
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.6;
+    color: var(--color2);
+}
+
+._saas_FAQ_btn_txt {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.accordion-button::after {
+    background-image: url("../img/Vector.svg");
+}
+
+.accordion-button:focus {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--color2);
+    background: var(--bg7);
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../img/Vector.svg");
+}
+
+.accordion-item {
+    border: 0;
+}
+
+/* Saas Landing Page footer section starts */
+._saas_footer_wrapper {
+    padding: 70px 0 60px;
+    background: var(--color4);
+}
+
+._saas_footer_logo_bg_img {
+    margin-bottom: 78px;
+}
+
+._saas_footer_logo_img {
+    max-width: 143px;
+}
+
+._saas_footer_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: rgba(10, 15, 13, 0.8);
+    margin-bottom: 30px;
+}
+
+._saas_footer_form {
+    position: relative;
+    width: fit-content;
+}
+
+._saas_footer_input {
+    width: 440px;
+    height: 66px;
+    background: var(--color4);
+    border: 1px solid rgba(10, 15, 13, 0.8);
+    border-radius: 10px;
+    padding: 0 67px 0 25px;
+}
+
+._saas_footer_input_btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 7px;
+    right: 11px;
+    background: var(--color1) !important;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+}
+
+._saas_footer_input_btn:hover {
+    background: var(--color4) !important;
+    border: 1px solid var(--color1) !important;
+}
+
+._saas_footer_input_btn svg path {
+    transition: .2s all ease-in-out;
+}
+
+._saas_footer_input_btn:hover svg path {
+    stroke: var(--color1) !important;
+}
+
+._saas_footer_title {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color1);
+    margin-bottom: 30px;
+}
+
+._saas_footer_list_item {
+    margin-bottom: 18px;
+}
+
+._saas_footer_list_item:last-child {
+    margin-bottom: 0;
+}
+
+._saas_footer_list_item_link {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color1) !important;
+    transition: .2s all ease;
+}
+
+._saas_footer_list_item_link:hover {
+    color: var(--color6) !important;
+}
+
+._saas_footer_bottm_wrap {
+    margin-top: 94px;
+    padding: 25px 0;
+    border-top: 1px solid rgba(10, 15, 13, 0.8);
+    border-bottom: 1px solid rgba(10, 15, 13, 0.8);
+}
+
+._saas_footer_bottm_menu_ul {
+    display: flex;
+    align-items: center;
+}
+
+._saas_footer_bottm_menu_li {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+}
+
+._saas_footer_bottm_menu_li._saas_footer_bottm_menu_li_span:hover svg path {
+    fill: var(--color5) !important;
+}
+
+._saas_footer_bottm_menu_itm {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color1) !important;
+    transition: .2s all ease;
+}
+
+._saas_footer_bottm_menu_itm:hover {
+    color: var(--color6) !important;
+}
+
+._saas_footer_bottm_menu_li_span {
+    margin-right: 12px;
+}
+
+._saas_footer_bottm_con_social_link_list_ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+._saas_footer_bottm_con_social_link_item {
+    margin-right: 8px;
+}
+
+._saas_footer_bottm_con_social_link {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(10, 15, 13, 0.8);
+    transition: .2s all ease-in;
+}
+
+._saas_footer_bottm_con_social_link:hover {
+    background: var(--color1);
+}
+
+._saas_footer_bottm_con_social_link svg path {
+    transition: .2s all ease-in;
+}
+
+._saas_footer_bottm_con_social_link:hover svg path {
+    fill: var(--color4);
+}
+
+._saas_footer_linkden_link svg path {
+    fill: var(--color1);
+    transition: .2s all ease-in;
+}
+
+._saas_footer_bottm_con_link {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color1) !important;
+    margin-right: 16px;
+}
+
+._saas_footer_bottm_con_link:hover {
+    color: var(--color6) !important;
+}
+
+._saas_footer_bottm_para {
+    padding-top: 38px;
+}
+
+._saas_footer_bottm_txt {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgba(10, 15, 13, 0.8);
+    text-align: center;
+}
+
+/* responsive */
+@media (max-width:1399px) {
+
+    /* Saas Landing Page header herosection starts */
+    ._saas_header_details_title {
+        font-size: 63px;
+    }
+
+    ._saas_header_details_txt {
+        max-width: 100%;
+    }
+
+    ._saas_header_details_title {
+        font-size: 50px;
+    }
+
+    ._saas_header_left_area_right_bg_img::before {
+        left: 26px;
+    }
+
+    /* Saas Landing Page services 1 starts */
+    ._saas_services_card_2_para {
+        font-size: 17px;
+    }
+
+    /* Saas Landing Page features 1 starts  */
+    ._saas_features_1_top_para {
+        max-width: 70%;
+    }
+
+    /* Saas Landing Page features 2 starts  */
+    ._saas_features_2_top_para {
+        max-width: 48%;
+    }
+
+    ._saas_features_2_Quick_View_details_para2 {
+        max-width: 87%;
+    }
+
+    ._saas_features_2_Sales_Data_list_item_txt {
+        max-width: 85%;
+    }
+
+    ._saas_features_2_Site_performance_list_item_txt {
+        max-width: 81%;
+    }
+
+    /* Saas Landing Page services 2 */
+    ._saas_services_2_top_para {
+        max-width: 84%;
+    }
+
+    ._saas_services_2_card_details_txt {
+        font-size: 17px;
+    }
+
+    /* Saas Landing Page testimonial start */
+    ._saas_testimonials_cards_quote {
+        max-width: 97%;
+    }
+
+    ._saas_testimonials_cards_quote_4 {
+        max-width: 97%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1199px) {
+
+    /* Saas Landing Page header herosection starts */
+    ._saas_header_details {
+        padding-left: 50px;
+    }
+
+    ._saas_header_left_area_right_bg_img_ic {
+        left: 264px;
+    }
+
+    ._saas_header_left_area_right_bg_img::before {
+        left: 0;
+    }
+
+    /* Saas Landing Page services 1 starts */
+    ._saas_services_top_title {
+        font-size: 45px;
+    }
+
+    ._saas_services_top_cont {
+        margin-bottom: 60px;
+    }
+
+    ._saas_services_card_1_para,
+    ._saas_services_card_3_para {
+        font-size: 17px;
+    }
+
+    /* Saas Landing Page services 2 starts */
+    ._saas_services_2_card_details_2_title,
+    ._saas_services_2_card_details_3_title {
+        font-size: 30px;
+    }
+
+    /* Saas Landing Page features 1 starts */
+    ._saas_features_1_top_title {
+        font-size: 45px;
+    }
+
+    ._saas_features_cards {
+        padding: 15px;
+    }
+
+    ._saas_features_cards_bg_img_span {
+        width: 60px;
+        height: 60px;
+    }
+
+    ._saas_features_cards_btn {
+        margin-left: 0;
+    }
+
+    ._saas_features_cards_details_title {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    ._saas_features_cards_details_para {
+        font-size: 15px;
+    }
+
+    ._saas_features_cards_btn_link {
+        width: 95px;
+        font-size: 15px;
+    }
+
+    /* Saas Landing Page features 2 starts */
+    ._saas_features_2_top_title {
+        font-size: 45px;
+    }
+
+    /* Saas Landing Page testimonial start */
+    ._saas_testimonials_cards_quote {
+        font-size: 17px;
+        max-width: 100%;
+    }
+
+    ._saas_testimonials_cards_quote_4 {
+        max-width: 100%;
+        font-size: 17px;
+    }
+
+    ._saas_testimonials_cards_img_play_btn {
+        bottom: 44px;
+        right: 11px;
+    }
+
+    /* Saas Landing Page FAQ section start  */
+    ._saas_FAQ_btn {
+        font-size: 26px;
+    }
+
+    ._saas_FAQ_btn_txt {
+        font-size: 17px;
+    }
+
+    /* Saas Landing Page footer section starts */
+    ._saas_footer_list_item_link {
+        font-size: 17px;
+    }
+
+    ._saas_footer_input {
+        width: 390px;
+    }
+}
+
+@media (max-width:991px) {
+    ._saas_header_nav_wrapper_item {
+        margin: 6px 0 0 0;
+    }
+
+    ._saas_header_nav_wrapper_list {
+        margin-top: 10px;
+    }
+
+    ._saas_header_nav_form_btn {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    ._saas_header_nav_login {
+        margin-right: 0;
+    }
+
+    ._saas_header_nav_btn {
+        margin-top: 20px;
+    }
+
+    /* Saas Landing Page header herosection starts */
+    ._saas_header_wrap {
+        padding: 80px 0 100px;
+    }
+
+    ._saas_header_left_area {
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    ._saas_header_details {
+        padding-left: 0;
+    }
+
+    ._saas_header_left_area::before {
+        top: 99px;
+        left: 150px;
+    }
+
+    ._saas_header_left_area_right_bg_img_ic {
+        top: 14px;
+        left: 388px;
+    }
+
+    ._saas_header_left_area::after {
+        bottom: -46px;
+        left: 349px;
+    }
+
+    ._saas_order_left {
+        order: 2;
+    }
+
+    ._saas_order_right {
+        order: 1;
+    }
+
+    /* Saas Landing Page logo starts */
+    ._saas_logo_companies_info_list_item {
+        margin: 0 40px 40px;
+    }
+
+    ._saas_logo_wrapper {
+        margin: 0 0 80px;
+    }
+
+    /* Saas Landing Page services 1 starts */
+    ._saas_services_wrapper {
+        margin: 0 0 70px;
+    }
+
+    /* Saas Landing Page features 1 */
+    ._saas_features_1_top_para {
+        max-width: 100%;
+    }
+
+    ._saas_features_1_top_title {
+        font-size: 40px;
+    }
+    ._saas_features_card_slider_wrap {
+        margin: 0 -152px 0 -156px;
+    }
+    /* Saas Landing Page features 2 */
+    ._saas_features_2_Quick_View_bg_img {
+        max-width: 70%;
+        margin-top: 50px;
+    }
+
+    ._saas_features_2_Sales_Data_bg_img {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    ._saas_features_2_Site_performance_bg_img {
+        max-width: 70%;
+        margin-top: 40px;
+        margin-left: auto;
+    }
+
+    ._saas_features_2_Channel_bg_img {
+        max-width: 70%;
+        margin-top: 40px;
+        margin-left: auto;
+    }
+
+    ._saas_features_2_top_title {
+        font-size: 40px;
+    }
+
+    ._saas_features_2_top_para {
+        max-width: 58%;
+    }
+
+    ._saas_features_2_Quick_View {
+        height: calc(100% - 30px);
+        margin-bottom: 30px;
+    }
+
+    ._saas_features_2_Channel {
+        height: calc(100% - 30px);
+        margin-bottom: 30px;
+    }
+
+    /* Saas Landing Page services 2 start */
+    ._saas_services_2_top_cont {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    ._saas_services_2_top_title {
+        font-size: 45px;
+    }
+
+    ._saas_services_2_top_para {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    ._saas_services_2_card {
+        height: calc(100% - 30px);
+        margin-bottom: 30px;
+    }
+
+    ._saas_services_2_wrapper {
+        margin: 90px 0;
+    }
+
+    /* Saas Landing Page FAQ section start */
+    ._saas_FAQ_cont_title {
+        font-size: 45px;
+    }
+
+    ._saas_footer_logo_bg_img {
+        margin-bottom: 55px;
+    }
+
+    ._saas_footer_logo_details {
+        margin-bottom: 50px;
+    }
+
+    ._saas_footer_bottm_wrap {
+        margin-top: 60px;
+    }
+
+    ._saas_footer_bottm_menu_itm,
+    ._saas_footer_bottm_con_link {
+        font-size: 13px;
+    }
+
+    ._saas_footer_bottm_txt {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:767px) {
+    ._saas_header_nav_wrapper_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    ._saas_header_nav_form_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ._saas_header_nav_btn {
+        width: 115px;
+        height: 36px;
+    }
+
+    /* Saas Landing Page header herosection starts */
+    ._saas_header_wrap {
+        padding: 50px 0 70px;
+    }
+
+    ._saas_header_details_title {
+        font-size: 44px;
+    }
+
+    ._saas_header_left_area::after {
+        bottom: -30px;
+        left: 259px;
+    }
+
+    ._saas_header_left_area_right_bg_img_ic {
+        top: 7px;
+        left: 299px;
+    }
+
+    /* Saas Landing Page logo starts */
+    ._saas_logo_companies_info_list_item {
+        margin: 0 25px 35px;
+    }
+
+    ._saas_logo_wrap {
+        margin: 0 0 100px;
+    }
+
+    /* Saas Landing Page services 1 starts */
+    ._saas_services_top_title {
+        font-size: 40px;
+        max-width: 67%;
+    }
+
+    ._saas_services_top_cont {
+        margin-bottom: 45px;
+    }
+
+    ._saas_header_left_area::before {
+        top: 119px;
+        left: 40px;
+    }
+
+    /* Saas Landing Page services 2 starts */
+    ._saas_services_2_card {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    /* Saas Landing Page features 2 starts  */
+    ._saas_features_2_top_para {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    ._saas_features_2_top_btn_link {
+        font-size: 18px;
+    }
+
+    ._saas_features_2_top_btn_link::before {
+        width: 116px;
+    }
+
+    ._saas_features_2_top_cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Saas Landing Page testimonial start */
+    ._saas_testimonials_title {
+        font-size: 45px;
+    }
+
+    ._saas_testimonials_cards_bg_img {
+        max-height: 80%;
+    }
+
+    ._saas_testimonials_title {
+        font-size: 38px;
+    }
+
+    /* Saas Landing Page FAQ section start */
+    ._saas_FAQ_cont_title {
+        font-size: 38px;
+    }
+
+    ._saas_FAQ_btn {
+        font-size: 18px;
+    }
+
+    ._saas_FAQ_btn_txt {
+        font-size: 16px;
+    }
+
+    /* Saas Landing Page footer section starts */
+    ._saas_footer_bottm_menu_ul {
+        justify-content: space-between;
+    }
+
+    ._saas_footer_bottm_con_social_link_list_ul {
+        justify-content: flex-start;
+        margin-top: 40px;
+    }
+
+    ._saas_footer_title {
+        margin-bottom: 24px;
+    }
+
+}
+
+@media (max-width:575px) {
+    ._saas_header_left_area::before {
+        top: 119px;
+        left: 127px;
+        width: 400px;
+    }
+
+    ._saas_header_left_area_right_bg_img_ic {
+        top: 15px;
+        left: 314px;
+    }
+
+    ._saas_header_left_area::after {
+        left: 276px;
+        bottom: -51px;
+    }
+
+    ._saas_header_left_area_right_bg_img::before {
+        width: 352px;
+        height: 500px;
+    }
+
+    ._saas_logo_wrap {
+        margin: 0 0 0;
+    }
+
+    ._saas_logo_wrapper {
+        margin: 0 0 55px;
+    }
+
+    /* Saas Landing Page features 1 starts */
+    ._saas_features_1_top_title {
+        font-size: 38px;
+    }
+
+    ._saas_features_card_slider_wrap {
+        margin: 0 -182px 0 -155px;
+    }
+
+    /* Saas Landing Page features 2 starts */
+    ._saas_features_2_top_title {
+        font-size: 38px;
+        margin-bottom: 16px;
+    }
+
+    ._saas_features_2_top_cont {
+        margin-bottom: 50px;
+    }
+
+    /* Saas Landing Page services 2 */
+    ._saas_services_2_top_title {
+        font-size: 38px;
+        margin-bottom: 16px;
+    }
+
+    ._saas_footer_wrapper {
+        padding: 70px 0 30px;
+    }
+}
+
+@media (max-width:420px) {
+
+    /* Saas Landing Page header herosection starts */
+    ._saas_header_wrap {
+        padding: 50px 0 20px;
+    }
+
+    ._saas_header_details_txt {
+        font-size: 16px;
+    }
+
+    ._saas_header_details_btn_link {
+        font-size: 18px;
+    }
+
+    ._saas_header_details_btn_link::before {
+        width: 114px
+    }
+
+    ._saas_header_details_btn_link_span {
+        width: 30px;
+        height: 30px;
+    }
+
+    ._saas_header_left_area::before {
+        top: 62px;
+        left: 42px;
+        width: 342px;
+    }
+
+    ._saas_features_card_slider_wrap {
+        margin: 0 -66px 0 -39px;
+    }
+
+    ._saas_header_left_area_right_bg_img_ic {
+        top: 0;
+        left: 230px;
+    }
+
+    ._saas_header_left_area_right_bg_img::before {
+        width: 263px;
+        height: 380px;
+    }
+
+    ._saas_header_left_area_left_bg_img::before {
+        width: 187px;
+        height: 214px;
+        top: 69px;
+    }
+
+    /* Saas Landing Page logo starts */
+    ._saas_logo_wrap {
+        padding: 30px 0 20px;
+    }
+
+    ._saas_logo_companies_info {
+        margin-top: 36px;
+    }
+
+    ._saas_logo_companies_info_list_item {
+        margin: 0 25px 40px;
+    }
+
+    ._saas_logo_wrapper {
+        padding: 20px 0;
+        margin: 0 0 30px;
+    }
+
+    /* Saas Landing Page services 1 starts */
+    ._saas_services_card_1 {
+        padding: 25px 25px 0;
+    }
+
+    ._saas_services_card_1_title,
+    ._saas_services_card_2_title,
+    ._saas_services_card_3_title {
+        max-width: 94%;
+    }
+
+    ._saas_services_card_1_para {
+        max-width: 83%;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    ._saas_services_card_2_para {
+        max-width: 100%;
+    }
+
+    ._saas_services_card_3_para {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    ._saas_services_top_title {
+        font-size: 38px;
+    }
+
+    ._saas_services_wrapper {
+        margin: 0 0 40px;
+    }
+
+    ._saas_services_card_3 {
+        padding: 30px 25px 0;
+    }
+
+    ._saas_services_card_2 {
+        padding: 0 25px 25px;
+    }
+
+    ._saas_services_top_cont {
+        margin-bottom: 30px;
+    }
+
+    /* Saas Landing Page features 1 starts */
+    ._saas_features_1_top_title {
+        margin-bottom: 16px;
+        max-width: 83%;
+    }
+
+    ._saas_features_1_top_para {
+        max-width: 83%;
+        font-size: 16px;
+    }
+
+    ._saas_features_1_top_btn_link {
+        font-size: 18px;
+    }
+
+    ._saas_features_1_top_btn_link::before {
+        width: 116px;
+    }
+
+    ._saas_features_1_wrapper {
+        margin-bottom: 70px;
+    }
+
+    /* Saas Landing Page features 2 starts */
+    ._saas_features_2_Interactive {
+        padding: 30px 25px 0 25px;
+    }
+
+    ._saas_features_2_Channel {
+        padding: 30px 0 0 25px;
+    }
+
+    ._saas_features_2_Site_performance {
+        padding: 30px 0 0 30px;
+    }
+
+    ._saas_features_2_Sales_Data {
+        padding: 25px 25px 0;
+        margin-bottom: 30px;
+    }
+
+    ._saas_features_2_Quick_View {
+        padding: 25px;
+    }
+
+    ._saas_features_2_Channel_details {
+        margin-bottom: 0;
+    }
+    ._saas_features_2_Interactive_details {
+        margin-bottom: 30px;
+    }
+    ._saas_features_2_btm {
+        margin-top: 30px;
+    }
+    /* Saas Landing Page services 2 starts */
+    ._saas_services_2_wrapper {
+        margin: 60px 0 20px;
+    }
+
+    ._saas_services_2_top_cont {
+        margin-bottom: 50px;
+    }
+
+    ._saas_services_2_top_para {
+        font-size: 16px;
+        max-width: 98%;
+    }
+
+    ._saas_services_2_top_btn_link {
+        font-size: 18px;
+    }
+
+    ._saas_services_2_top_btn_link::before {
+        width: 117px;
+    }
+
+    ._saas_services_2_card_details_txt {
+        font-size: 18px;
+        max-width: 83%;
+    }
+
+    ._saas_services_2_card_details {
+        margin-top: 70px;
+    }
+
+    /* Saas Landing Page testimonial start */
+    ._saas_testimonials_top_cont {
+        margin-bottom: 35px;
+    }
+
+    ._saas_testimonials_cards_quote {
+        font-size: 16px;
+    }
+
+    ._saas_testimonials_wrapper {
+        padding: 50px 0;
+    }
+    ._saas_testimonials_wrapper {
+        padding: 50px 0 30px;
+    }
+    /* Saas Landing Page FAQ section start */
+    ._saas_FAQ_cont {
+        margin-bottom: 50px;
+    }
+
+    ._saas_FAQ_wrapper {
+        padding: 50px 0;
+    }
+
+    /* Saas Landing Page footer section starts */
+    ._saas_footer_wrapper {
+        padding: 50px 0 23px;
+    }
+
+    ._saas_footer_list_item_link {
+        font-size: 15px;
+    }
+
+    ._saas_footer_logo_bg_img {
+        margin-bottom: 45px;
+    }
+
+    ._saas_footer_title {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+
+    ._saas_footer_logo_img {
+        max-width: 132px;
+    }
+
+    ._saas_footer_input {
+        width: 351px;
+        height: 58px;
+        padding: 0 53px 0 15px;
+    }
+
+    ._saas_footer_input_btn {
+        width: 45px;
+        height: 45px;
+        top: 7px;
+        right: 6px;
+    }
+
+    ._saas_footer_bottm_wrap {
+        margin-top: 30px;
+    }
+
+    ._saas_footer_bottm_con_social_link_list_ul {
+        margin-top: 17px;
+    }
+
+    ._saas_footer_bottm_para {
+        padding-top: 20px;
+    }
+
+    ._saas_footer_list_item_link {
+        font-size: 14px;
+    }
+
+    ._saas_footer_list_item {
+        margin-bottom: 13px;
+    }
+}
+
+@media (max-width:375px) {
+    ._saas_header_details_txt {
+        max-width: 94%;
+    }
+
+    ._saas_header_left_area::before {
+        top: 62px;
+        left: 0px;
+        width: 350px;
+    }
+
+    ._saas_header_left_area_right_bg_img_ic {
+        top: 0;
+        left: 204px;
+    }
+
+    ._saas_header_left_area_left_bg_img::before {
+        width: 149px;
+        height: 214px;
+        top: 54px;
+    }
+
+    ._saas_header_left_area_right_bg_img::before {
+        width: 230px;
+        height: 350px;
+    }
+
+    /* Saas Landing Page services 1 starts */
+    ._saas_services_card_2_para {
+        max-width: 100%;
+    }
+
+    ._saas_services_card_3_para {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    /* Saas Landing Page features 1 starts  */
+    ._saas_features_1_top_para {
+        max-width: 93%;
+    }
+
+    ._saas_features_card_slider_wrap {
+        margin: 0 11px 0 12px;
+    }
+
+    ._saas_features_cards_details_para {
+        font-size: 12px;
+    }
+
+    ._saas_features_cards_details_title {
+        font-size: 19px;
+    }
+
+    ._saas_features_1_top_para {
+        max-width: 94%;
+    }
+
+    /* Saas Landing Page features 2 */
+    ._saas_features_2_top_cont {
+        margin-bottom: 40px;
+    }
+    ._saas_features_2_top_para {
+        max-width: 93%;
+        font-size: 16px;
+    }
+
+    ._saas_features_2_Sales_Data_list_item_txt {
+        max-width: 81%;
+        font-size: 15px;
+    }
+
+    ._saas_features_2_Channel_details {
+        padding: 0 20px 0 0;
+    }
+
+    ._saas_features_2_Channel_details_para {
+        max-width: 85%;
+    }
+
+    ._saas_features_2_Interactive_details_para {
+        font-size: 15px;
+        max-width: 87%;
+    }
+
+    ._saas_features_2_top_para {
+        max-width: 99%;
+        font-size: 17px;
+    }
+
+    ._saas_features_2_Quick_View_bg_img {
+        margin-top: 30px;
+    }
+
+    ._saas_features_2_Sales_Data_bg_img {
+        margin-top: 20px;
+    }
+
+    ._saas_features_2_Site_performance_bg_img {
+        margin-top: 20px;
+    }
+
+    ._saas_features_2_Channel {
+        padding: 25px 0 0 25px;
+    }
+
+    ._saas_features_2_Channel_bg_img {
+        margin-top: 20px
+    }
+
+    ._saas_features_2_Interactive_details {
+        margin-bottom: 20px;
+    }
+
+    ._saas_features_2_Site_performance_list_item_txt {
+        max-width: 79%;
+    }
+    ._saas_features_2_btm {
+        margin-top: 30px;
+    }
+    /* Saas Landing Page services 2 */
+    ._saas_services_2_card_details_2_txt {
+        display: block;
+        font-family: 'Satoshi';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 100%;
+        color: var(--color1);
+    }
+
+    ._saas_services_2_card_details_3_txt {
+        display: block;
+        font-family: 'Satoshi';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 100%;
+        color: var(--color1);
+    }
+
+    ._saas_title_hr {
+        color: var(--color1);
+        margin-bottom: 12px;
+        max-width: 100%;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--color1);
+        display: block;
+        font-size: 32px;
+    }
+
+    ._saas_services_2_card_details_txt {
+        font-size: 18px;
+        max-width: 100%;
+    }
+    ._saas_FAQ_cont {
+        margin-bottom: 30px;
+    }
+    ._saas_FAQ_wrapper {
+        padding: 30px 0;
+    }
+   
+    ._saas_footer_input {
+        width: 310px;
+    }
+
+    ._saas_footer_list_item {
+        margin-bottom: 10px;
+    }
+
+    ._saas_footer_bottm_menu_itm,
+    ._saas_footer_bottm_con_link {
+        font-size: 11px;
+    }
+
+    ._saas_footer_bottm_txt {
+        font-size: 12px;
+    }
+    ._saas_footer_logo_bg_img {
+        margin-bottom: 30px;
+    }
+}
+
+/* variable */
+:root {
+    --color1: #0A0F0D;
+    --color2: #FFFFFF;
+    --color3: #FFFBA0;
+    --color4: #EBFFDB;
+    --color5: #C5B6F0;
+    --color6: #5b54ec;
+    --bg1: #FEFEF9;
+    --bg2: #F5F1EA;
+    --bg3: #D5E9F8;
+    --bg4: #FFD8A8;
+    --bg5: #000000;
+    --bg6: #FEF4DB;
+    --bg7: #1A1A1A;
+}
